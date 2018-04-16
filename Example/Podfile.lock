@@ -1,0 +1,16 @@
+PODS:
+  - MJBFaveButton (0.1.0)
+
+DEPENDENCIES:
+  - MJBFaveButton (from `../`)
+
+EXTERNAL SOURCES:
+  MJBFaveButton:
+    :path: ../
+
+SPEC CHECKSUMS:
+  MJBFaveButton: f65bb3ea62ebdef994ee0a96f059b8c63048cd03
+
+PODFILE CHECKSUM: ff9e8a85ade668654673a6b3c71a617363f1838e
+
+COCOAPODS: 1.4.0

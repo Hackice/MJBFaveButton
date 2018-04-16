@@ -1,0 +1,6 @@
+framework module MJBFaveButton {
+  umbrella header "MJBFaveButton-umbrella.h"
+
+  export *
+  module * { export * }
+}
