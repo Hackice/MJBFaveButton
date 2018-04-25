@@ -19,7 +19,7 @@
 		607FACE51AFB9204008FA782 /* MJBFaveButton_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MJBFaveButton_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		6A5D6F5344A8FCF395EE8A40 /* MJBFaveButton.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MJBFaveButton.podspec; path = ../MJBFaveButton.podspec; sourceTree = "<group>"; };
+		6A5D6F5344A8FCF395EE8A40 /* MJBFaveButton.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MJBFaveButton.podspec; path = ../MJBFaveButton.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		749461A25AEBB61EEB3A1E6D /* Pods_MJBFaveButton_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MJBFaveButton_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -282,6 +282,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -327,6 +328,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;

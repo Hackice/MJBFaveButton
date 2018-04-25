@@ -10,24 +10,15 @@ Pod::Spec.new do |s|
   s.name             = 'MJBFaveButton'
   s.version          = '0.2.0'
   s.summary          = 'Favorite Animated Button written in Swift, based on xhamr/fave-button.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
-
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+                      This is a very easy to use animated button based on xhamr/fave-button, which can achieve a cool praise effect like Twitter. The original framework can not support the normal/selected image as a normal UIButton, so I made some changes to support this feature.
                        DESC
-
   s.homepage         = 'https://github.com/Hackice/MJBFaveButton'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Hackice' => 'hackice@sina.cn' }
   s.source           = { :git => 'https://github.com/Hackice/MJBFaveButton.git', :tag => s.version.to_s }
-
   s.ios.deployment_target = '8.0'
-
+  s.swift_version = '4.0'
   s.source_files = 'MJBFaveButton/Classes/**/*'
   
 end
