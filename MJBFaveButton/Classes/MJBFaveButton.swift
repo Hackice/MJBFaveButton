@@ -49,14 +49,21 @@ open class MJBFaveButton: UIButton {
     
     fileprivate func animateWithSparksAndRings(_ button: UIButton, duration: Double = 1, firstColor: UIColor, secondColor: UIColor, circleFromColor: UIColor, circleToColor: UIColor) {
         // Zoom Animation
+        var view: UIView?
+        if (imageView?.image != nil) {
+            view = imageView
+        } else {
+            view = button
+        }
+        guard let animateView = view else { return }
         let scaleAnimation = Init(CAKeyframeAnimation(keyPath: "transform.scale")) {
             $0.values    = generateTweenValues(from: 0, to: 1.0, duration: CGFloat(duration))
             $0.duration  = duration
             $0.beginTime = CACurrentMediaTime()
         }
-        layer.add(scaleAnimation, forKey: nil)
+        animateView.layer.add(scaleAnimation, forKey: nil)
         
-        if isSelected{
+        if isSelected {
             self.alpha = 0
             UIView.animate(
                 withDuration: 0,
@@ -69,11 +76,11 @@ open class MJBFaveButton: UIButton {
         
         guard isSelected else { return }
         // Spark Animation
-        let bounds = button.bounds
+        let bounds = animateView.bounds
         let radius = bounds.size.scaleBy(1.3).width / 2 // ring radius
         let igniteFromRadius = radius * 0.8
         let igniteToRadius = radius * 1.1
-        let ring = Ring.createRing(button, radius: 0.01, lineWidth: 3, fillColor: circleFromColor)
+        let ring = Ring.createRing(animateView, radius: 0.01, lineWidth: 3, fillColor: circleFromColor)
         
         func createSparks() -> [Spark] {
             let radius = igniteFromRadius
@@ -85,7 +92,7 @@ open class MJBFaveButton: UIButton {
             
             for index in 0..<Const.sparkGroupCount {
                 let theta = step * Double(index) + offset
-                let spark = Spark.createSpark(button, radius: radius, firstColor: firstColor, secondColor: secondColor, angle: theta,
+                let spark = Spark.createSpark(animateView, radius: radius, firstColor: firstColor, secondColor: secondColor, angle: theta,
                                               dotRadius: dotRadius)
                 sparks.append(spark)
             }
