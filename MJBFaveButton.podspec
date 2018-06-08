@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MJBFaveButton'
-  s.version          = '0.3.0'
+  s.version          = '0.3.1'
   s.summary          = 'Favorite Animated Button written in Swift, based on xhamr/fave-button.'
   s.description      = <<-DESC
                       This is a very easy to use animated button based on xhamr/fave-button, which can achieve a cool praise effect like Twitter. The original framework can not support the normal/selected image as a normal UIButton, so I made some changes to support this feature.

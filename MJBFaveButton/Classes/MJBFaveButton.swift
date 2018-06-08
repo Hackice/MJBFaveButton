@@ -26,14 +26,6 @@ open class MJBFaveButton: UIButton {
     @IBInspectable open var circleFromColor: UIColor = UIColor(red: 221/255, green: 70/255,  blue: 136/255, alpha: 1)
     @IBInspectable open var circleToColor: UIColor   = UIColor(red: 205/255, green: 143/255, blue: 246/255, alpha: 1)
     
-    override open var isHighlighted: Bool {
-        didSet {
-            if isHighlighted {
-                isHighlighted = false
-            }
-        }
-    }
-    
     override open var isSelected: Bool {
         didSet {
             guard shouldAnimate else { return }
