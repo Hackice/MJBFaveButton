@@ -110,7 +110,6 @@
 				607FACE21AFB9204008FA782 /* Frameworks */,
 				607FACE31AFB9204008FA782 /* Resources */,
 				33F989608123A77B8EAFD83E /* [CP] Embed Pods Frameworks */,
-				475412B48254280AC1AEC88D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -183,21 +182,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MJBFaveButton_Tests/Pods-MJBFaveButton_Tests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		475412B48254280AC1AEC88D /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MJBFaveButton_Tests/Pods-MJBFaveButton_Tests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		77ABB076A6C7AFF9B3B73E46 /* [CP] Check Pods Manifest.lock */ = {
@@ -284,7 +268,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -332,7 +316,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;

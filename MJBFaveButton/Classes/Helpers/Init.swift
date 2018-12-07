@@ -25,6 +25,6 @@
 import Foundation
 
 func Init<T>( _ object: T, block: (T) throws -> Void) rethrows -> T {
-  try block(object)
-  return object
+    try block(object)
+    return object
 }

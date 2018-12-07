@@ -1,16 +1,16 @@
 PODS:
-  - MJBFaveButton (0.3.1)
+  - MJBFaveButton (0.4.1)
 
 DEPENDENCIES:
   - MJBFaveButton (from `../`)
 
 EXTERNAL SOURCES:
   MJBFaveButton:
-    :path: ../
+    :path: "../"
 
 SPEC CHECKSUMS:
-  MJBFaveButton: c922da71292b49414f83a22dd4a258d8db619748
+  MJBFaveButton: c98da67b56ca54db12bfeb2493b661f384d6cb4e
 
 PODFILE CHECKSUM: ff9e8a85ade668654673a6b3c71a617363f1838e
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.5.3
